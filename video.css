@@ -1,0 +1,96 @@
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+@media (min-width: 1400px) {
+  .grids {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .grids {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.timer {
+  color: white;
+  background-color: black;
+  position: absolute;
+  bottom: 7px;
+  right: 5px;
+  z-index: 1;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.one {
+  width: 100%;
+}
+.thumbnail {
+  position: relative;
+}
+.Video {
+  width: 100%;
+}
+
+.Des {
+  margin-top: 5px;
+}
+.human {
+  width: 36px;
+  border-radius: 50px;
+}
+.title {
+  font-size: 15px;
+  width: 240px;
+  font-weight: 500;
+}
+.author,
+.views {
+  margin-top: 10px;
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+.views {
+  margin-top: 5px;
+}
+.Des {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 10px;
+}
+.pic {
+  position: relative;
+}
+.pic .channel-tooltip {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  padding: 6px;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+.pic:hover .channel-tooltip {
+  opacity: 1;
+}
+.pic .channel-tooltip .content {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  padding-left: 4px;
+}
+.pic .channel-tooltip .tool-pic {
+  width: 36px;
+  border-radius: 50px;
+}

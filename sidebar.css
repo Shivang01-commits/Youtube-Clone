@@ -1,0 +1,28 @@
+.sidebar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 70px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 200px;
+}
+.sideicons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70px;
+  height: 70px;
+}
+.icons {
+  width: 24px;
+  height: 24px;
+}
+.txt {
+  font-size: 12px;
+}
